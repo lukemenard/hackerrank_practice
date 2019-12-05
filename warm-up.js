@@ -13,3 +13,22 @@ function sockMerchant(n, ar) {
     return pairs
 }
 
+
+// COUNTING VALLEYS
+
+function countingValleys(n, s) {
+    let elevation = 0
+    let valleys = 0
+
+    for (let i = 0; i < n; i ++) {
+        if (s[i] === "D"){
+            --elevation
+        }
+        else if (s[i] === "U"){
+            if (++elevation === 0){
+                valleys++
+            }
+        }
+    }
+    return valleys
+}
