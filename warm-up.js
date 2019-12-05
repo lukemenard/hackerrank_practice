@@ -1,3 +1,5 @@
+// SOCK MERCHANT
+
 function sockMerchant(n, ar) {
     let arr_sorted = arr.sort((a, b) => a - b)
     let pairs = 0
@@ -10,3 +12,4 @@ function sockMerchant(n, ar) {
     }
     return pairs
 }
+
